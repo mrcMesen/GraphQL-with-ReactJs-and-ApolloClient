@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { SummaryHome } from './components/SummaryHome';
-import { Detail } from './components/Detail';
+import { PersonDetail } from './components/PersonDetail';
 import { Layout } from './components/Layout';
 
 import './styles/App.css';
@@ -14,8 +14,8 @@ function App() {
           <Route exact path='/'>
             <SummaryHome />
           </Route>
-          <Route path='/about'>
-            <Detail />
+          <Route path='/person-details/:id'>
+            <PersonDetail />
           </Route>
         </Switch>
       </Layout>

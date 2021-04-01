@@ -1,8 +1,6 @@
 import { ReactElement } from 'react';
 
-interface Props {}
-
-export default function HomeIcon({}: Props): ReactElement {
+export default function HomeIcon(): ReactElement {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
